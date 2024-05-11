@@ -10,7 +10,7 @@ public class UserLogIn {
     }
 
     private boolean ValidateUserName(String username){
-        // Todo: - Check the username is in the proper format.
+        // Checking the username is in the proper format.
         String emailFormat = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
         Pattern pattern = Pattern.compile(emailFormat);
         Matcher matcher = pattern.matcher(username);
