@@ -21,8 +21,11 @@ public class CreateNewUser {
      * Function to valid the length of the password.
      */
     private boolean ValidatePassword(String password) {
-        // Todo:- Modify the code as per the conditions.
-        return 6 <= password.length() && password.length() <= 15;
+        String regex = "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]+$";
+        if (password.matches(regex) && password.length() >= 6 && password.length() <= 16) {
+            return true;
+        }else
+            return false;
     }
 
     /**
