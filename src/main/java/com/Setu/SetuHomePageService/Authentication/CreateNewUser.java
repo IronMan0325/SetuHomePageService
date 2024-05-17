@@ -30,8 +30,7 @@ public class CreateNewUser {
      * Function to verify the input string is mobile number.
      */
     private boolean ValidateNumber(String number) {
-        // Todo:- Implement the java code to verify the input string is valid phone number.
-        return false;
+        return number.matches("^(?:\\(?([0-9]{3})\\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})(?: x(\\d+))?)$");
     }
 
     /**
